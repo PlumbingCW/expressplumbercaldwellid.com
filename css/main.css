@@ -390,4 +390,12 @@ main a,.site-footer a{overflow-wrap:anywhere}
  .hero-home .dispatch{display:none}
  .callsteps ol{grid-template-columns:minmax(0,1fr)}
 }
-}
+
+/* neighborhood links on the home page */
+.hoodgrid{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.hoodgrid a{display:block;height:100%;padding:16px 18px;border:1px solid var(--line,#d9e3e8);border-radius:14px;background:#fff;color:var(--navy);font-weight:700;text-decoration:none;box-shadow:0 2px 8px rgba(15,42,61,.05)}
+.hoodgrid a:hover,.hoodgrid a:focus-visible{border-color:var(--teal-d,#0C8888);box-shadow:0 6px 16px rgba(15,42,61,.1)}
+.hoodgrid span{display:block;margin-top:4px;font-weight:400;font-size:14.5px;color:var(--gray)}
+@media(max-width:900px){.hoodgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.hoodgrid{grid-template-columns:minmax(0,1fr)}}
+.prose-block:has(> .table-wrap:last-child)+.midcta{margin-top:28px}
